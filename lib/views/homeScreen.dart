@@ -71,237 +71,201 @@ class HomeScreen extends StatelessWidget {
               decoration: const BoxDecoration(
                 color: Colors.white,
               ),
-              child: Stack(
-                children: [
-                  Positioned(
-                    top: 35,
-                    left: 30,
-                    child: Container(
-                      height: 14,
-                      width: 14,
-                      decoration: const BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: Color(0xFFCEE2FF),
-                      ),
+              child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Stack(
+                      children: [
+                        Container(
+                          height: 14,
+                          width: 14,
+                          margin: const EdgeInsets.only(left: 30, top: 35),
+                          decoration: const BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: Color(0xFFCEE2FF),
+                          ),
+                          child: Center(
+                            child: Container(
+                              height: 5.384615421295166,
+                              width: 5.384615421295166,
+                              decoration: const BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: Color(0xFF2B70D7),
+                              ),
+                            ),
+                          ),
+                        ),
+                        const Padding(
+                          padding: EdgeInsets.only(left: 60, top: 35),
+                          child: Text(
+                            'From',
+                            style: TextStyle(
+                              fontFamily: 'PublicaSans',
+                              fontSize: 14,
+                              fontWeight: FontWeight.w300,
+                              height: 16 / 18,
+                              color: Color(0xFF75879B),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
-                  ),
-                  Positioned(
-                    top: 39.31,
-                    left: 34.31,
-                    child: Container(
-                      height: 5,
-                      width: 5,
-                      decoration: const BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: Color(0xFF2B70D7),
-                      ),
+                    Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(top: 5, left: 26),
+                          child: Container(
+                            height: 0.5,
+                            width: 296.00000000000114,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(60),
+                              color: const Color(0xFFD2DBD6),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          height: 27,
+                          width: 27,
+                          margin: const EdgeInsets.only(top: 5),
+                          decoration: const BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: Color(0xFFECB21E),
+                          ),
+                          child: Align(
+                            alignment: const Alignment(0.1, 0.1),
+                            child: Container(
+                              height: 12,
+                              width: 12,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(0),
+                                color: Colors.transparent,
+                                image: const DecorationImage(
+                                  image: AssetImage(change),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
-                  ),
-                  Positioned(
-                    top: 37,
-                    left: 60,
-                    child: Container(
-                      height: 14,
-                      width: 33,
-                      color: Colors.white,
-                      child: const Text(
-                        'From',
-                        style: TextStyle(
-                          fontFamily: 'PublicaSans',
-                          fontSize: 14,
-                          fontWeight: FontWeight.w300,
-                          height: 16 / 18,
-                          color: Color(0xFF75879B),
+                    const Row(children: [
+                      Padding(
+                        padding: EdgeInsets.only(top: 12, left: 32),
+                        child: Icon(
+                          Icons.location_on,
+                          color: Color(0xFF2B70D7),
+                          size: 18,
                         ),
                       ),
-                    ),
-                  ),
-                  Positioned(
-                    top: 67,
-                    left: 26,
-                    child: Container(
-                      height: 0.5,
-                      width: 296,
-                      decoration: BoxDecoration(
-                        color: Color(0xFFD2DBD6),
-                        borderRadius: BorderRadius.circular(0),
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    top: 53,
-                    left: 318,
-                    child: Container(
-                      height: 27,
-                      width: 27,
-                      decoration: const BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: Color(0xFFECB21E),
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    top: 61,
-                    left: 327,
-                    child: Container(
-                      height: 10,
-                      width: 11,
-                      decoration: const BoxDecoration(
-                        color: Color(0xFFECB21E),
-                        image: DecorationImage(
-                          image: AssetImage(change),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    top: 86,
-                    left: 32,
-                    child: Container(
-                      height: 10,
-                      width: 12,
-                      decoration: const BoxDecoration(
-                        color: Colors.white,
-                        image: DecorationImage(
-                          image: AssetImage(location),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    top: 85,
-                    left: 60,
-                    child: Container(
-                      height: 14,
-                      width: 15,
-                      color: Colors.white,
-                      child: const Text(
-                        'To',
-                        style: TextStyle(
-                          fontFamily: 'PublicaSans',
-                          fontSize: 14,
-                          fontWeight: FontWeight.w300,
-                          height: 16 / 18,
-                          color: Color(0xFF75879B),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    top: 117,
-                    left: 26,
-                    child: Container(
-                      height: 0.5,
-                      width: 319,
-                      decoration: BoxDecoration(
-                        color: Color(0xFFD2DBD6),
-                        borderRadius: BorderRadius.circular(0),
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    top: 137,
-                    left: 32,
-                    child: Container(
-                      height: 10,
-                      width: 12,
-                      decoration: const BoxDecoration(
-                        color: Colors.white,
-                        image: DecorationImage(
-                          image: AssetImage(calendar),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    top: 135,
-                    left: 60,
-                    child: Container(
-                      height: 15,
-                      width: 82,
-                      color: Colors.white,
-                      child: const Text(
-                        'Sat, 20 May',
-                        style: TextStyle(
-                          fontFamily: 'PublicaSans',
-                          fontSize: 14,
-                          fontWeight: FontWeight.w500,
-                          height: 16 / 18,
-                          color: Color(0xFF000000),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    top: 135,
-                    left: 247,
-                    child: Container(
-                      height: 15,
-                      width: 15,
-                      decoration: const BoxDecoration(
-                        color: Color(0xFF2B70D7),
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    top: 139.21,
-                    left: 250.21,
-                    child: Container(
-                      height: 9,
-                      width: 9,
-                      decoration: const BoxDecoration(
-                        color: Color(0xFF2B70D7),
-                        image: DecorationImage(
-                          image: AssetImage(vector),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    top: 137,
-                    left: 267,
-                    child: Container(
-                      height: 13,
-                      width: 78,
-                      color: Colors.white,
-                      child: const Text(
-                        'Return Ticket',
-                        style: TextStyle(
-                          fontFamily: 'PublicaSans',
-                          fontSize: 12,
-                          fontWeight: FontWeight.w400,
-                          height: 16 / 18,
-                          color: Color(0xFF000000),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    top: 181,
-                    left: 30,
-                    child: Container(
-                      height: 45,
-                      width: 315,
-                      decoration: BoxDecoration(
-                        color: Color(0xFF192B46),
-                        borderRadius: BorderRadius.circular(5),
-                      ),
-                      child: const Center(
+                      Padding(
+                        padding: EdgeInsets.only(left: 18, top: 12),
                         child: Text(
-                          'Find My Ride',
+                          'To',
                           style: TextStyle(
                             fontFamily: 'PublicaSans',
                             fontSize: 14,
+                            fontWeight: FontWeight.w300,
+                            height: 16 / 18,
+                            color: Color(0xFF75879B),
+                          ),
+                        ),
+                      ),
+                    ]),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 10, left: 26),
+                      child: Container(
+                        height: 0.5,
+                        width: 319.0000000000012,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(60),
+                          color: const Color(0xFFD2DBD6),
+                        ),
+                      ),
+                    ),
+                    Row(children: [
+                      const Padding(
+                        padding: EdgeInsets.only(top: 19, left: 32),
+                        child: Icon(
+                          Icons.calendar_today,
+                          color: Color(0xFF2B70D7),
+                          size: 18,
+                        ),
+                      ),
+                      const Padding(
+                        padding: EdgeInsets.only(left: 18, top: 19),
+                        child: Text(
+                          'Sat 20 May',
+                          style: TextStyle(
+                            fontFamily: 'PublicaSans',
+                            fontSize: 15,
                             fontWeight: FontWeight.w500,
                             height: 16 / 18,
-                            color: Color(0xFFFFFFFF),
+                            color: Color(0xFF000000),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 100, top: 19),
+                        child: Container(
+                          height: 15,
+                          width: 15,
+                          decoration: const BoxDecoration(
+                            color: Color(0xFF2B70D7),
+                          ),
+                          child: Align(
+                            alignment: const Alignment(0.1, 0.1),
+                            child: Container(
+                              height: 12,
+                              width: 12,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(0),
+                                color: Colors.transparent,
+                                image: const DecorationImage(
+                                  image: AssetImage(vector),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      const Padding(
+                        padding: EdgeInsets.only(left: 3, top: 19),
+                        child: Text(
+                          'Return Ticket',
+                          style: TextStyle(
+                            fontFamily: 'PublicaSans',
+                            fontSize: 12,
+                            fontWeight: FontWeight.w400,
+                            height: 16 / 18,
+                            color: Color(0xFF000000),
+                          ),
+                        ),
+                      ),
+                    ]),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 31, left: 30),
+                      child: Container(
+                        height: 45,
+                        width: 315,
+                        decoration: BoxDecoration(
+                          color: const Color(0xFF192B46),
+                          borderRadius: BorderRadius.circular(5),
+                        ),
+                        child: const Center(
+                          child: Text(
+                            'Find My Ride',
+                            style: TextStyle(
+                              fontFamily: 'PublicaSans',
+                              fontSize: 14,
+                              fontWeight: FontWeight.w500,
+                              height: 16 / 18,
+                              color: Color(0xFFFFFFFF),
+                            ),
                           ),
                         ),
                       ),
                     ),
-                  ),
-                ],
-              ),
+                  ]),
             ),
           ],
         ),
