@@ -3,3 +3,5 @@ const change = 'assets/images/change.png';
 const location = 'assets/images/location.png';
 const calendar = 'assets/images/calendar.png';
 const vector = 'assets/images/vector.png';
+const Rides = 'assets/images/Rides.png';
+const bus = 'assets/images/bus.png';
